@@ -1,0 +1,8 @@
+# a) Number of letters in name
+
+print("Let's count the number of letters in your name!")
+name = len(input("What is your name? \n"))
+print("Number of letters in your name: " + str(name))
+
+# single line code
+# print("Let's count the number of letters in your name!\nNumber of letters in your name: " + str(len(input("What is your name? \n"))))
