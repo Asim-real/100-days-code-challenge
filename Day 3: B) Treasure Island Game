@@ -1,0 +1,46 @@
+# B) Treasure Island Game
+
+print('''
+
+
+                  .--------------------------------...
+               ,'-------------------------------,'   |
+              /                                /     |
+             /________________________________/    ,'|
+             |               ..               |  ,'  |
+             |___________-==/88\==-___________|,' /) |.
+             |  \    \     ((  ))     /    /  |  (/  |-. .
+             |   \    \     \{}/     /    /   |    .' .  .
+          . '|    \    \     )(     / _  /    |    ,   .  .
+         . . |\    \    \    \/    _.( ~-.   /|\ ,' .   . .
+       ` .  -`_-.--.______..._____( ,/  ` \~-.|,' .   .
+        .  `    .     .       .  ,'\. ~-  . , .  .  .   .
+           .  `   .     ,   .      , ~~-.' .  .    .
+
+''')
+print("Welcome to Treasure Island. \nYour mission is to find the treasure!")
+
+road = input("You have reached the shore of the island. There's a path ahead of you split in two. Do you go 'right' or 'left'?: ").lower()
+if road == "left":
+  print("You start walking towards the left path and reach a river cutting the path.")
+  river = input("Do you choose to swim and cross the river or wait for a boatman to show up? 'Swim' or 'Wait'?: ").lower()
+  if river == "swim":
+    print("You decide to take the risk and swim, you find crocodiles in the river but your determination takes you across the river before they could attack you!")
+    door = input("After crossing the river, you reach an ancient temple. You step inside and find three doors ahead of you: Red, Green, Yellow. Which one do you choose to enter?: ").lower()
+    if door == "yellow":
+      print("You enter inside the yellow door and see that the entire room is shining in white paint. You walk ahead...")
+      final = input("After walking ahead the white room, you come across a chest. It matches the description of the ancient myth. Do you open the chest or move it? open or move: ").lower()
+      if final == "open":
+        print("This was a trap, it released a cloud of acid filled tiny darts on your face. Your face melts off and you fall on the ground. \nGAME OVER!")
+      else:
+        print("You move the chest without opening it. You find a hole beneath the chest. You look inside and find that its filled with gold coins and jewelery, your eyes are filled with joy! You found the TREASURE!!! \nCONGRATULATIONS!")
+    elif door == "green":
+      print("You open the green door and enter inside only to be shot with an arrow in your chest via a trap that got triggered. You fall down and bleed to your death. \nGAME OVER!")
+    else:
+      print("You open and walk inside the red door. It's dark inside, you feel something moving near your legs. You flick your lighter to see what it is. The floor is filled with snakes. One of them bites your ankle, you panic and try to run out but the door is locked. You die due to poisining. \nGAME OVER!")
+
+  else:
+    print("You decide its safer to wait for someone to show up with a boat and help. You keep waiting.....nobody shows up. You sit there for ages.... waiting. Nothing happens. You wait your entire life away at the river bank. \nGAME OVER!")
+
+else:
+  print("You start walking towards the right path but immediately fall into a trap dug on the path. You scream for help but there is nobody around. \nGAME OVER!")
